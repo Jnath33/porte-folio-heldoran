@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
 
 body {
     background-color: #34353A;
@@ -61,75 +65,49 @@ header button:hover {
     background-color: rgba(138, 59, 158, 0.8);
 }
 
-.modal-login {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-  
-/* Modal Content/Box */
-.modal-login-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 25%; /* Could be more or less, depending on screen size */
+.poeme {
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin: 0;
+    background-color: #0d122c;
+    justify-content: space-between;
+    align-items: left;
+    padding: 15px 5%;
+    width: 95%;
+    max-width: 850px;
 }
 
-.modal-login * {
-    background-color: #fefefe;
-}
-  
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-  
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.modal-login li {
+.poemes ul{
     list-style: none;
 }
-.modal-login input{
-      border: 10px solid #14151A;
-      border-radius: 30px;
-      color: #14151A;
-      width: 80%;
-      padding-left: 10px;
-      font-family: "Montserrat", "sans-serif";
-      font-weight: 500;
-      font-size: 25px;
-      text-decoration: none;
-      margin-bottom: 15px;
-      background-color: #ccc;
+
+.poemes li:not(:last-child) {
+    margin-bottom: 5%;
 }
 
-.modal-login button{
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 161, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    width: 70%;
-    margin-left: 7%;
+.poeme ul li:not(:last-child){
+    margin-bottom: 5px;
 }
 
-.modal-login button:hover {
-    background-color: rgba(138, 59, 158, 0.8);
+.poemes titre {
+    color: rgb(255, 250, 236);
+    font-family: "Pacifico", "cursive";
+    font-weight: 500;
+    font-size: 40px;
+    text-decoration: underline #ccc;
+}
+
+.poemes numero {
+    color: rgb(255, 250, 236);
+    margin-bottom: 40px;
+    font-family: "Source Code Pro", "sans-serif";
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.poemes contenu {
+    color: rgb(255, 250, 236);
+    font-family: "Merriweather", "sans-serif";
+    font-weight: 500;
+    font-size: 15px;
 }

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<configuration>
-    <system.webServer>
-      <httpProtocol>
-        <customHeaders>
-          <add name="Access-Control-Allow-Origin" value="*" />
-        </customHeaders>
-      </httpProtocol>
-    </system.webServer>
-   </configuration>
 <html>
+    <configuration>
+        <system.webServer>
+          <httpProtocol>
+            <customHeaders>
+              <add name="Access-Control-Allow-Origin" value="*" />
+            </customHeaders>
+          </httpProtocol>
+        </system.webServer>
+       </configuration>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,6 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
-        <script src="script.js" defer></script>
     </head>
     <body>
         <header>
@@ -25,31 +24,103 @@
             </a>
             <nav>
                 <ul class="nav__links">
-                    <li><a href="#opening">Services</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#sommaire">Poèmes</a></li>
                 </ul>
             </nav>
             <div>
-                <a class="cta" href="#" id="joinButton"><button>Add Poème</button></a>
+                <a class="cta" href="https://discord.gg/UPCtBbZNfa" id="joinButton"><button>Join Discord</button></a>
             </div>
         </header>
+        <div class="sommaire" id="sommaire">
+            
+        </div>
         <br/>
-        <textarea id="textArea">Le poème</textarea>
-        <div id="loginModal" class="modal-login">
-
-            <!-- Modal content -->
-            <div class="modal-login-content">
-                <span class="close">&times;</span>
-                <div>
-                    <ul>
-                        <li><input id="userField" type="text" placeholder="Your name"></li>
-                        <li><input id="pwdField" type="password" placeholder="Your password"></li>
-                        <li><a class="cta" href="#" id="logInButton"><button>Log IN</button></a></li>
+        <div class="poemes" id="poemes">
+            <ul class="p-list">
+                <li><ul class="poeme">
+                    <li><titre>Jeux Olympiques</titre></li>
+                    <li><numero>Défi n°1</numero></li>
+                    <li><contenu>
+                        Datant de la grande Olympie,<br/>
+                        Grande ville antique du sport,<br/>
+                        Vidant la faim de ces kelpies<br/>
+                        Aux métiers venant du sport.<br/>
+                        <br/>
+                        A ce jour, toutes les nations<br/>
+                        Ce battent avec acharnement,<br/>
+                        Grâce a la détermination<br/>
+                        D'athlètes aux milles entrainement.<br/>
+                        <br/>
+                        Ils datent de la Grèce antique,<br/>
+                        Mais ils ont changé leurs mimiques,<br/>
+                        Et admirez les de nos jours,<br/>
+                        <br/>
+                        Ils sont toujours de retour.<br/>
+                        Regardez les, ces Magnifiques,<br/>
+                        Admirez les Jeux Olympiques.
+                    </contenu></li>
+                </ul></li>
+                <li><ul class="poeme">
+                    <li><titre>Le Chat</titre></li>
+                    <li><numero>Défi n°2</numero></li>
+                    <li><contenu>
+                        Le voilà miauler,<br/>
+                        Il veut quelques caresses,<br/>
+                        Il vous voit le gratter,<br/>
+                        <br/>
+                        Grace à sa jeune aînesse (a revoir).<br/>
+                        Au sein de la maison,<br/>
+                        Éloignant la raison,<br/>
+                        <br/>
+                        Regardant comme ça,<br/>
+                        Le moindre de vos pas,<br/>
+                        Voici le petit chat.
+                    </contenu></li>
+                </ul></li>
+                <li>
+                    <ul class="poeme">
+                        <li><titre>Le Snake</titre></li>
+                        <li><numero>Défi n°3</numero></li>
+                        <li><contenu>
+                            Début de partie,<br/>
+                            Il est concentré,<br/>
+                            Expérimenté,<br/>
+                            Et sans empathie.<br/>
+                            <br/>
+                            Et voilà la pomme.<br/>
+                            <br/>
+                            Le serpent, lui, grandit,<br/>
+                            Sans un mot suis les ordres<br/>
+                            De son air de bandit,<br/>
+                            De son corps tel la corde.<br/>
+                            <br/>
+                            Et revoilà la pomme.<br/>
+                            <br/>
+                            Il y a de multiples modes,<br/>
+                            Faisant office de niveaux,<br/>
+                            Du ying yang aux autres animaux,<br/>
+                            Il faut juste changer le code.<br/>
+                            <br/>
+                            Il tourne et retrouve la pomme.<br/>
+                            <br/>
+                            Voici qu'augmente sa faible vitesse,<br/>
+                            Le grand joueur voit cela comme un test,<br/>
+                            Il est déterminé et se prépare<br/>
+                            Car il trouve que c'est le vrai départ.<br/>
+                            <br/>
+                            Toujours concentré, il mange la pomme.<br/>
+                            <br/>
+                            Certes, certains préfèreront faire du skate<br/>
+                            Et d'autres voudront plutôt faire du vélo,<br/>
+                            Mais certains veulent joué aux jeux vidéos<br/>
+                            Et parmis eux, certains souhaite joué au Snake.<br/>
+                            <br/>
+                            C'est la fin de la partie, car voici le mur.<br/>
+                        </contenue></li>
                     </ul>
-                </div>
-            </div>
-          
-          </div>
+                </li>
+            </ul>
+        </div>
+        <br/>
     </body>
 </html>
