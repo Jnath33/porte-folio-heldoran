@@ -2,7 +2,7 @@ const userAction = async () => {
   const response = await fetch('http://kimsufi2.jaguenaud.org:25146/portefolio/luis/get_poemes/');
   const myJson = await response.json(); //extract JSON from the http response
   // do something with myJson
-  console.log(myJson["poemes"]["snake"]["challenger"]);
+  console.log(myJson);
 }
 
 userAction()

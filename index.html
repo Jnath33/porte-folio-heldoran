@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<configuration>
+    <system.webServer>
+      <httpProtocol>
+        <customHeaders>
+          <add name="Access-Control-Allow-Origin" value="*" />
+        </customHeaders>
+      </httpProtocol>
+    </system.webServer>
+   </configuration>
 <html>
     <head>
         <meta charset="utf-8">
