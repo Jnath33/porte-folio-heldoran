@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <header>
@@ -15,15 +16,31 @@
             </a>
             <nav>
                 <ul class="nav__links">
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#opening">Services</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
             </nav>
             <div>
-                <a class="cta" href="#"><button>Log In</button></a>
+                <a class="cta" href="#" id="joinButton"><button>Add Poème</button></a>
             </div>
         </header>
-        <div>Test</div>
+        <br/>
+        <textarea id="textArea">Le poème</textarea>
+        <div id="loginModal" class="modal-login">
+
+            <!-- Modal content -->
+            <div class="modal-login-content">
+                <span class="close">&times;</span>
+                <div>
+                    <ul>
+                        <li><input id="userField" type="text" placeholder="Your name"></li>
+                        <li><input id="pwdField" type="password" placeholder="Your password"></li>
+                        <li><a class="cta" href="#" id="logInButton"><button>Log IN</button></a></li>
+                    </ul>
+                </div>
+            </div>
+          
+          </div>
     </body>
 </html>
