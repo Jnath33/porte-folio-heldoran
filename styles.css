@@ -68,7 +68,7 @@ header button:hover {
 .poeme {
     box-sizing: border-box;
     border-radius: 25px;
-    margin: 0;
+    margin: auto;
     background-color: #0d122c;
     justify-content: space-between;
     align-items: left;
@@ -77,20 +77,14 @@ header button:hover {
     max-width: 850px;
 }
 
-.poemes ul{
-    list-style: none;
-}
 
-.poemes li:not(:last-child) {
+.poemes .poeme:not(:last-child) {
     margin-bottom: 5%;
-}
-
-.poeme ul li:not(:last-child){
-    margin-bottom: 5px;
 }
 
 .poemes titre {
     color: rgb(255, 250, 236);
+    display: block;
     font-family: "Pacifico", "cursive";
     font-weight: 500;
     font-size: 40px;
@@ -99,6 +93,7 @@ header button:hover {
 
 .poemes numero {
     color: rgb(255, 250, 236);
+    display: block;
     margin-bottom: 40px;
     font-family: "Source Code Pro", "sans-serif";
     font-weight: 500;
@@ -107,6 +102,7 @@ header button:hover {
 
 .poemes contenu {
     color: rgb(255, 250, 236);
+    display: block;
     font-family: "Merriweather", "sans-serif";
     font-weight: 500;
     font-size: 15px;

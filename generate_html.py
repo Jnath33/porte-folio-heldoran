@@ -30,8 +30,8 @@ def get_somaire():
 
 def get_poeme():
     c_text = text.replace('\n', f"<br/>\n{t}{t}")
-    return f"<li><ul class=\"poeme\">\n{t}<li><titre>{title}</titre></li>\n{t}<li><numero>Défi n°{d_id}</numero></li>\n{t}" + \
-        f"<li><contenu>\n{t}{t}{c_text}\n{t}</contenu></li>\n</ul></li>"
+    return f"<div class=\"poeme\">\n{t}<titre>{title}</titre>\n{t}<numero>Défi n°{d_id}</numero>\n{t}" + \
+        f"<contenu>\n{t}{t}{c_text}\n{t}</contenu>\n</div>"
 
 
 
